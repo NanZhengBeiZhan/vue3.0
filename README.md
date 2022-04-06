@@ -1,67 +1,144 @@
-<h1 align="center">vue3-admin</h1>
+![](static-files/newbee-mall.png)
 
-## 简介
-vue3-admin是一个后台管理系统的前端页面展示，是由vue-cli4和elemnet-ui搭建实现的。使用了最新的vue框架，内部采用了组件化开发模式，尽可能使得每个组件都遵循单一
-功能原则。虽然刚开始看起来可能略感疲惫（由于子组件功能单一，所以内部通信较多），但是对后期的维护有着非常大的好处。项目采用弹性盒（flex）布局，故而在移动端也有着较好的显示效果，可在移动端进行打开demo查看。
+- [知乎：如何看待慕课网涉嫌抄袭开源项目作为《Java工程师》的终极项目并上线销售？](https://www.zhihu.com/question/464292538)
+- [《newbee-mall开源项目被慕课网拿去做课程，然后我毫不知情，这又是什么骚操作？》](https://mp.weixin.qq.com/s/xEk-y9HA8RxJWMplpTQ1MQ)
+- [《起诉书！慕课网你敢抄袭，我就敢起诉你！》](https://mp.weixin.qq.com/s/oXr6O7u7vqQQi8mzTkoTDg)
+- [《花费3680元买了一个慕课网的Java就业班课程，里面竟然有自己写的开源项目！》](https://mp.weixin.qq.com/s/TLZbAEjRi0YT1t8xoFv4dQ)
+- [《newbee-mall开源项目被慕课网拿去做课程，讲师已道歉，课程却还在售卖》](https://mp.weixin.qq.com/s/sue5JyZcysFRNFTxUnZiIQ)
+- [《可笑！慕课网涉嫌抄袭开源项目至今没有道歉，而且在偷偷的“毁尸灭迹”》](https://mp.weixin.qq.com/s/UTsA5WOFPH4UUf5rEj2HpQ)
+- [《最新证据：代码相似度达到90%以上！再谈慕课网涉嫌抄袭事件》](https://mp.weixin.qq.com/s/myejz9icB55wfdHEFNvrBw)
+- [《newbee-mall开源项目被慕课网拿去做课程，项目详细对比记录，更多实锤看这里》](https://mp.weixin.qq.com/s/JTt0r_t8qhfUwkhpdUjrTg)
+- [《一个被慕课网拿去做Java就业班终极项目的开源商城项目，推荐给大家》](https://mp.weixin.qq.com/s/BKIETwgEPBprWYhQZJDLIA)
 
-## 服务器超时未续费，已停机，当前无法预览，感兴趣的朋友自己拉取代码运行吧，抱歉
+![Build Status](https://img.shields.io/badge/build-passing-green.svg)
+![Version 3.0.0](https://img.shields.io/badge/version-3.0.0-yellow.svg)
+[![License](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://github.com/newbee-ltd/newbee-mall-vue3-app/blob/master/LICENSE)
 
-## 演示(由于作者自己买的低配版阿里云服务器，所以可能导致请求时间略长)
-[在线demo](http://39.105.222.188/vue3.0-admin/#/login)
+newbee-mall 项目是一套电商系统，包括 newbee-mall 商城系统及 newbee-mall-admin 商城后台管理系统，基于 Spring Boot 2.X 和 Vue 以及相关技术栈开发。 前台商城系统包含首页门户、商品分类、新品上线、首页轮播、商品推荐、商品搜索、商品展示、购物车、订单结算、订单流程、个人订单管理、会员中心、帮助中心等模块。 后台管理系统包含数据面板、轮播图管理、商品管理、订单管理、会员管理、分类管理、设置等模块。
 
-移动端可扫码查看
+本仓库中的源码为新蜂商城前后端分离版本的 Vue 项目（Vue 版本为 3.x），主要面向前端开发人员，后端 API 源码在另外一个仓库 [newbee-mall-api](https://github.com/newbee-ltd/newbee-mall-api)。
 
-![avatar](./qrCode.png)
+新蜂商城 Vue3 版本线上预览地址：[http://vue3-app.newbee.ltd](http://47.99.134.126:5008)，账号可自行注册，建议使用手机模式打开。
 
-## 更快更好的开发体验，请查看下面的项目
-[vue3实战项目](https://github.com/guodonglw/vue3-admin)
+前后端分离版本包括四个仓库：
 
-## 开发
-```bash
-# 克隆项目
-git clone git@github.com:guodonglw/vue3.0-admin.git
+- [新蜂商城后端接口 newbee-mall-api](https://github.com/newbee-ltd/newbee-mall-api)
+- [新蜂商城 Vue2 版本 newbee-mall-vue-app](https://github.com/newbee-ltd/newbee-mall-vue-app)
+- [新蜂商城 Vue3 版本 newbee-mall-vue3-app](https://github.com/newbee-ltd/newbee-mall-vue3-app)
+- [新蜂商城后台管理系统 Vue3 版本 vue3-admin](https://github.com/newbee-ltd/vue3-admin)
 
-# 进入项目目录
-cd vue3.0-admin
+>Vue2 版本与 Vue3 版本分成两个仓库，大家需要哪个版本就去对应的仓库即可。
 
-# 安装依赖
-npm install
+**坚持不易，如果觉得项目还不错的话可以给项目一个 Star 吧，也是对我一直更新代码的一种鼓励啦，谢谢各位的支持。**
 
-# 建议不要用 cnpm 安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题
-npm install --registry=https://registry.npm.taobao.org
+![newbee-mall-info](https://newbee-mall.oss-cn-beijing.aliyuncs.com/poster/store/newbee-mall-star.png)
 
-# 启动服务
-npm run serve
+关注公众号：**程序员十三**，回复"勾搭"进群交流。
 
-# 如遇到node-sass的问题，可尝试
-npm rebuild node-sass
-```
+![wx-gzh](https://newbee-mall.oss-cn-beijing.aliyuncs.com/wx-gzh/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8D%81%E4%B8%89-%E5%85%AC%E4%BC%97%E5%8F%B7.png)
 
-浏览器访问 http://localhost:8080
+## 开发及部署文档
 
-## 发布
+- [向“全栈”进发！大型线上商城实战项目，Spring Boot + Vue 前后端分离版本的商城来了！](https://juejin.im/book/6844733826191589390)
+- [项目须知和课程约定](https://juejin.im/book/6844733826191589390)
+- [全栈开发！你必须要知道的“前后端分离”](https://juejin.im/book/6844733826191589390)
+- [前端模块化的发展历史](https://juejin.im/book/6844733826191589390)
+- [传统页面和单页面的权衡与抉择](https://juejin.im/book/6844733826191589390)
+- [准备工作及基础环境搭建（后端）](https://juejin.im/book/6844733826191589390)
+- [Spring Boot 项目初体验--项目搭建及启动](https://juejin.im/book/6844733826191589390)
+- [项目编码简化利器！Spring Boot 整合 Lombok](https://juejin.im/book/6844733826191589390)
+- [Lombok 插件问题处理](https://juejin.im/book/6844733826191589390)
+- [商城后端项目启动和运行注意事项](https://juejin.im/book/6844733826191589390)
+- [VSCode 的相关配置及插件介绍](https://juejin.im/book/6844733826191589390)
+- [基础篇：Vue 指令](https://juejin.im/book/6844733826191589390)
+- [基础篇：Vue全局API及生命周期介绍](https://juejin.im/book/6844733826191589390)
+- [基础篇: CSS 预处理工具Less的介绍及使用](https://juejin.im/book/6844733826191589390)
+- [Vue 脚手架工具 Vue-Cli 配置介绍](https://juejin.im/book/6844733826191589390)
+- [Vue-Router 浅析原理及使用](https://juejin.im/book/6844733826191589390)
+- [全局状态管理插件 Vuex 介绍及使用](https://juejin.im/book/6844733826191589390)
+- [商城前端 H5 开发环境搭建及项目启动](https://juejin.im/book/6844733826191589390)
+- [前后端交互文档利器！Spring Boot 整合 Swagger](https://juejin.im/book/6844733826191589390)
+- [接口参数处理和统一响应结果](https://juejin.im/book/6844733826191589390)
+- [口设计规范及接口调用实践](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-用户登录接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-用户身份认证详解](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-首页模块接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-分类模块接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-商品搜索模块接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-购物车模块接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-个人信息及收货地址接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-下单流程接口开发](https://juejin.im/book/6844733826191589390)
+- [商城开发实战-订单处理流程详解](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-新蜂商城底部导航(抽离公共组件)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-新蜂商城登录注册页(前端鉴权)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-商城首页制作(轮播图、首页商品列表)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-商品分类页面制作(better-scrol的介绍及使用)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-商品列表页面制作(无限滚动加载)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-商品详情页面制作(Vuex 购物车数量全局管理)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-商城购物车页面制作(购物车页)](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-确认订单页面制作](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-地址栏管理页面制作](https://juejin.im/book/6844733826191589390)
+- [商城移动端开发实战-我的订单页面制作](https://juejin.im/book/6844733826191589390)
+- [Vue 3.x 新特性概览](https://juejin.im/book/6844733826191589390)
+- [新蜂商城迁移至 Vue 3.x 流程讲解](https://juejin.im/book/6844733826191589390)
 
-```bash
-# 构建生产环境
-npm run build
-```
+## 联系作者
 
-打包会出现dist文件夹，用Chrome浏览器打开index.html页面即可
+> 大家有任何问题或者建议都可以在 [issues](https://github.com/newbee-ltd/newbee-mall-vue3-app/issues) 中反馈给我，我会慢慢完善这个项目。
 
-## Browsers support
+- 我的邮箱：2449207463@qq.com
+- QQ技术交流群：932227898 552142710
 
-Modern browsers
+## 软件著作权
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- |
-| last 2 versions| last 2 versions| last 2 versions
-  
-## 备注
+>本系统已申请软件著作权，受国家版权局知识产权以及国家计算机软件著作权保护！
 
-```javascript
-// 建议首先查看路由文件(了解项目路由以及如何进行动态生成前端路由)
-// 页面查看顺序(登录页（views/Login）-> 首页(views/Home/Dashboard))，其中views/Home为其他页面的公共引用部分
-// 与后端交互接口（请查看service/index.ts，数据由mock.js产生；实际开发请查看util/request.ts）
-// 后台系统包括了登录，异步生成路由，echarts数据可视化，table表增删改查等功能，希望该demo示例可以帮助到有需要的朋友快速上手
-// 根据vue-cli示例，主页面index.vue中会采用vue2的写法，在子组件中则有较大的变化，请仔细查看区别
-```
+![](https://newbee-mall.oss-cn-beijing.aliyuncs.com/poster/store/newbee-mall-copyright-02.png)
+
+## 页面展示
+
+以下为新蜂商城 Vue3 版本的页面预览：
+
+- 登录页
+
+![](static-files/登录.png)
+
+- 首页
+
+![](static-files/首页.png)
+
+- 商品搜索
+
+![](static-files/商品搜索.png)
+
+- 商品详情页
+
+![](static-files/详情页.png)
+
+- 购物车
+
+![](static-files/购物车.png)
+
+- 生成订单
+
+![](static-files/生成订单.png)
+
+- 地址管理
+
+![](static-files/地址管理.png)
+
+- 订单列表
+
+![](static-files/订单列表.png)
+
+- 订单详情
+
+![](static-files/订单详情.png)
+
+## 感谢
+
+- [Vue](https://github.com/vuejs/vue)
+- [Vue-Router](https://github.com/vuejs/vue-router-next)
+- [Vuex](https://github.com/vuejs/vuex/tree/4.0)
+- [Vant](https://github.com/youzan/vant)
+- [better-scroll](https://github.com/ustbhuangyi/better-scroll)
